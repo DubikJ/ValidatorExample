@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:id="@+id/pay_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/pay_content_cash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_fingerprinter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/image_fingerprinter"
+                style="@style/TextStyle_Standart_Accent"
+                android:layout_margin="10dp"/>
+
+            <ImageView
+                android:id="@+id/image_fingerprinter"
+                android:layout_width="@dimen/size_image_icon"
+                android:layout_height="@dimen/size_image_icon"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                app:srcCompat="@drawable/ic_fingerprint"
+                tools:ignore="VectorDrawableCompat" />
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">Validator</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_subtitle">sales@servio.com.ua</string>
+
+    <string name="action_settings">Настройки</string>
+    <string name="action_exit">Выход</string>
+    <string name="action_qr_code_scan">QR код</string>
+    <string name="action_halls">Залы</string>
+    <string name="service">Сервис</string>
+    <string name="action_close">Закрыть</string>
+    <string name="action_rate">Оценить</string>
+    <string name="action_activation">Активация</string>
+    <string name="hall">Зал</string>
+    <string name="start">Начало</string>
+    <string name="finish">Окончание</string>
+    <string name="action_rental">Прокат</string>
+
+    <string name="id_device">Ид устройства</string>
+    <string name="server_address">Сервер</string>
+
+    <!--AlertDialog-->
+    <string name="questions_exit">Вы уверены, что хотите выйти?</string>
+    <string name="questions_close_session">Вы уверены, что хотите закрыть кассовую смену?</string>\
+    <string name="questions_open_session">Открыть кассовую смену?</string>
+    <string name="questions_save_changes">Сохранить изменения?</string>
+    <string name="questions_select_element">Выбрать елемент?</string>
+    <string name="questions_resend_code">Отправить повторно запрос SMS с кодом?</string>
+    <string name="questions_title_info">Инфо</string>
+    <string name="questions_answer_yes">Да</string>
+    <string name="questions_answer_save">Сохранить</string>
+    <string name="questions_answer_no">Нет</string>
+    <string name="questions_answer_cancel">Отменить</string>
+    <string name="questions_answer_ok">Ок</string>
+    <string name="questions_title_question">Вопрос</string>
+    <string name="questions_title_error">Ошибка</string>
+    <string name="questions_title_successful">Успешно</string>
+    <string name="questions_select_from_list">Выберите из списка</string>
+    <string name="questions_answer_not_use">Не использовать</string>
+    <string name="questions_rate">Не желаете оценить приложение?</string>
+    <string name="questions_answer_late">Позже</string>
+    <string name="error_activation">На сервере нету свободных лицензий</string>
+    <string name="error_connect_server_activation">Невозможно подключиться к серверу лицензий</string>
+    <string name="enter_password">Введите пароль</string>
+    <string name="password">Пароль</string>
+    <string name="error_password">Неверный пароль</string>
+    <string name="attention">Внимание</string>
+
+    <!--fingerprint-->
+    <string name="use_fingerprint">Используйте отпечаток пальца для подтверждения</string>
+    <string name="touch_to_scanner">Прикоснитесь к сканеру</string>
+    <string name="touch_to_scanner_for_confirm">Прикоснитесь к сканеру для подтверждения</string>
+    <string name="use_fingerprint_auth">Использование отпечатка пальца для авторизации</string>
+    <string name="re_scan_fingerprint">Попробуйте еще раз</string>
+    <string name="error_start_fingerprint">Попробуйте еще раз</string>
+    <string name="clear_finger_print_pass">Очистить пароль для сканера отпечатков</string>
+    <string name="finger">Cканер отпечатков</string>
+
+    <!--Sync-->
+    <string name="loading_error">Не загружено</string>
+    <string name="loading_from_server">Загрузка из сервера...</string>
+    <string name="loading_from_db">Формирование данных...</string>
+    <string name="loading_title">Загрузка. Подождите...</string>
+    <string name="error_no_data">Отсутствуют данные!</string>
+    <string name="error_data_server">Ошибка обработки данных на сервере!</string>
+    <string name="error_retrieving_data">Ошибка получения данных. Обратитесь в техподдержку</string>
+    <string name="error_sending_data">Ошибка выполнения команды. Обратитесь в техподдержку</string>
+    <string name="error_internet_connecting">Отсутствует соединение с интернетом!</string>
+    <string name="address_server_not_found">Не указан адрес сервера</string>
+    <string name="hall_not_found">Зал не найден</string>
+    <string name="qr_code_empty">QR код пустой</string>
+
+    <string name="new_version_app">Появилась новая версия приложения. Обновить?</string>
+    <string name="confirmed">Успешно</string>
+    <string name="canceled">Отменено</string>
+    <string name="places">мест</string>
+    <string name="qr_code_scanner">Сканнер QR-кода</string>
+    <string name="camera_scanner">Камера</string>
+    <string name="scanning">Сканирование</string>
+
+    <string name="mode">Режим</string>
+    <string name="select_mode">Выберите режим</string>
+    <string name="mode_1">Кинотеатр</string>
+    <string name="mode_2">Прокат</string>
+    <string name="enter_code">Введите код</string>
+    <string name="block_auto_validate">Отключить авто-валидацию</string>
+    <string name="nfc_disabled">Необходимо включить NFC в настройках устройства</string>
+    <string name="nfc_start_error">Неудалось включить NFC</string>
+    <string name="type_scan">Способ сканирования</string>
+    <string name="nfc_not_init">Отсутствует NFC</string>
+    <string name="nfc_code_settings">Настройки кода NFC</string>
+    <string name="card_code_length">Длина кода карт</string>
+    <string name="prefix_card_code">Префикс кода карт</string>
+    <string name="postfix_card_code">Постфикс кода карт</string>
+
+</resources>

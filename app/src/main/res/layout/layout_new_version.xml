@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/holo_green_dark"
+    android:visibility="visible">
+
+    <TextView
+        android:id="@+id/update_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/close_update"
+        android:text="@string/new_version_app"
+        android:textColor="@color/colorWhite"
+        android:padding="8dp"
+        style="@style/TextStyle_Small_White"/>
+
+    <TextView
+        android:id="@+id/close_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:text="@string/action_close"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="8dp"
+        style="@style/TextStyle_Small_White"/>
+</RelativeLayout>

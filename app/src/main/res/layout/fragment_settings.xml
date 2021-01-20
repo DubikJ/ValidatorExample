@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp"
+        android:visibility="gone">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/id_device_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true"
+            app:cardBackgroundColor="@color/colorWhite">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="5dp"
+                android:paddingTop="8dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/id_device_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="3dp"
+                        android:paddingTop="3dp"
+                        android:paddingRight="3dp"
+                        android:text="@string/id_device"
+                        style="@style/TextStyle_Standart_Bold_Accent"
+                        android:layout_alignParentLeft="true"/>
+
+                    <TextView
+                        android:id="@+id/id_device"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:paddingTop="3dp"
+                        android:paddingRight="3dp"
+                        android:paddingBottom="10dp"
+                        style="@style/TextStyle_Large_PrimaryDark"
+                        android:layout_below="@+id/id_device_name"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/id_device_card">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true"
+                    app:cardBackgroundColor="@color/colorWhite">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/text_comment_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:padding="5dp"
+                        android:theme="@style/EditTextHint"
+                        app:hintTextAppearance="@style/TextSizeInputLayoutLabel">
+
+                        <EditText
+                            android:id="@+id/server"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/server_address"
+                            style="@style/EditText_Standart_Accent" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/switch_finger_print_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="3dp"
+                    app:cardUseCompatPadding="true"
+                    app:cardBackgroundColor="@color/colorWhite">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@color/colorWhite">
+
+                        <Switch
+                            android:id="@+id/switch_finger_print"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="5dp"
+                            android:text="@string/use_fingerprint_auth"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/text_size_middle" />
+
+                        <TextView
+                            android:id="@+id/clear_finger_print_pass"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="5dp"
+                            android:text="@string/clear_finger_print_pass"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/text_size_middle"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/switch_finger_print"
+                            android:drawableLeft="@drawable/ic_fingerprint"/>
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="3dp"
+                    app:cardUseCompatPadding="true"
+                    app:cardBackgroundColor="@color/colorWhite">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:background="@color/colorWhite">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/select_mode_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/colorWhite"
+                            android:theme="@style/EditTextHint"
+                            app:hintTextAppearance="@style/TextSizeInputLayoutLabel">
+
+                            <EditText
+                                android:id="@+id/select_mode"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/select_mode"
+                                android:textColor="@color/colorAccent"
+                                android:textColorHint="@color/colorGrey"
+                                android:focusable="false"
+                                style="@style/EditText_Standart_Accent" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <Switch
+                            android:id="@+id/block_auto_validate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/select_mode_layout"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/colorWhite"
+                            android:padding="5dp"
+                            android:text="@string/block_auto_validate"
+                            android:visibility="gone"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/text_size_small" />
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="3dp"
+                    app:cardUseCompatPadding="true"
+                    app:cardBackgroundColor="@color/colorWhite">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:background="@color/colorWhite">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/select_scan_type_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/colorWhite"
+                            android:theme="@style/EditTextHint"
+                            app:hintTextAppearance="@style/TextSizeInputLayoutLabel">
+
+                            <EditText
+                                android:id="@+id/select_scan_type"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/type_scan"
+                                android:textColor="@color/colorAccent"
+                                android:textColorHint="@color/colorGrey"
+                                android:focusable="false"
+                                style="@style/EditText_Standart_Accent" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <LinearLayout
+                            android:id="@+id/use_nfc_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_below="@+id/select_scan_type_layout"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/connect_portable_reader"
+                                style="@style/TextStyle_Standart_Accent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_margin="5dp"
+                                android:padding="5dp"
+                                android:text="@string/nfc_code_settings"/>
+
+                            <LinearLayout
+                                android:id="@+id/prefix_card_code_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="6dp"
+                                    android:background="@color/colorWhite"
+                                    android:layout_weight="1"
+                                    android:theme="@style/EditTextHint"
+                                    app:hintTextAppearance="@style/TextSizeInputLayoutLabel">
+
+                                    <EditText
+                                        android:id="@+id/card_code_length"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="@string/card_code_length"
+                                        android:textColor="@color/colorAccent"
+                                        android:textColorHint="@color/colorGrey"
+                                        android:inputType="number"
+                                        style="@style/EditText_Standart_Accent" />
+
+                                </android.support.design.widget.TextInputLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="6dp"
+                                        android:background="@color/colorWhite"
+                                        android:layout_weight="1"
+                                        android:theme="@style/EditTextHint"
+                                        app:hintTextAppearance="@style/TextSizeInputLayoutLabel">
+
+                                        <EditText
+                                            android:id="@+id/prefix_card_code"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:hint="@string/prefix_card_code"
+                                            android:textColor="@color/colorAccent"
+                                            android:textColorHint="@color/colorGrey"
+                                            style="@style/EditText_Standart_Accent" />
+
+                                    </android.support.design.widget.TextInputLayout>
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="6dp"
+                                        android:background="@color/colorWhite"
+                                        android:layout_weight="1"
+                                        android:theme="@style/EditTextHint"
+                                        app:hintTextAppearance="@style/TextSizeInputLayoutLabel">
+
+                                        <EditText
+                                            android:id="@+id/postfix_card_code"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:hint="@string/postfix_card_code"
+                                            android:textColor="@color/colorAccent"
+                                            android:textColorHint="@color/colorGrey"
+                                            style="@style/EditText_Standart_Accent" />
+
+                                    </android.support.design.widget.TextInputLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.journeyapps.barcodescanner.DecoratedBarcodeView
+            android:id="@+id/zxing_barcode_scanner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:zxing_scanner_layout="@layout/scaner_view" />
+
+        <LinearLayout
+            android:id="@+id/switch_camera"
+            android:layout_width="@dimen/scan_activty_button_sixze"
+            android:layout_height="@dimen/scan_activty_button_sixze"
+            android:layout_gravity="top|right"
+            android:layout_margin="10dp"
+            android:background="@drawable/ic_change_camera"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:id="@+id/switch_flashlight"
+            android:layout_width="@dimen/scan_activty_button_sixze"
+            android:layout_height="@dimen/scan_activty_button_sixze"
+            android:layout_gravity="top|left"
+            android:layout_margin="10dp"
+            android:background="@drawable/ic_flash_on"
+            android:orientation="vertical" />
+
+    </FrameLayout>
+
+
+</android.support.constraint.ConstraintLayout>
